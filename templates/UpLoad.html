@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/template.css') }}">
+    <title>Python Flask Multiple Files Upload Example</title>
+</head>
+<body>
+    <div class="container"> 
+    <h2>請上傳想要轉檔的檔案</h2>
+    <p >
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul class=flashes>
+            {% for message in messages %}
+        <li>{{ message }}</li>
+           {% endfor %}
+        </ul>
+            {% endif %}
+            {% endwith %}
+    </p>
+      <div class="formContainer">
+        <form method="post" action="/" enctype="multipart/form-data">
+        <input type="file" name="files[]" multiple="true" autocomplete="off" required
+        >
+        <input type="submit" value="Submit" id="custom-button">
+        </form>
+        <form method="post" action="/shp" enctype="multipart/form-data">
+            <input type="submit" value="開始轉檔" id="custom-button">
+        </form>
+        <form method="get" action="/getShp" enctype="multipart/form-data">
+            <input type="submit" value="查看轉檔結果" id="custom-button">
+        </form>
+      </div>
+    </div>
+</body>
+</html>
