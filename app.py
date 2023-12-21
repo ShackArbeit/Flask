@@ -7,7 +7,7 @@ from werkzeug.utils import secure_filename
 
 from shp import Shp_To_GeoJson;
 
-from shp import Get_GeoJson;
+from shp import Read_GeoJson;
 
 # 初始化 Flask 模組
 app = Flask( __name__, static_folder="static",static_url_path='/static')
@@ -38,18 +38,6 @@ def allowed_file(filename):
 def upload_form():
     return render_template('UpLoad.html')
 
-@app.route('/shp', methods=['POST'])
-def shp_to_geojson():
-    Shp_To_GeoJson()
-    flash('.shp 檔案已經成功轉為 GEJSON 檔了 !，請查看')
-    return redirect('/')
-
-@app.route('/getShp')
-def get_geojson():
-     geojson_contents =Get_GeoJson
-     return jsonify(geojson_contents)
-
-
 @app.route('/', methods=['POST'])
 def upload_file():
     # 確保前端的請求方法是 POST 方法
@@ -74,6 +62,17 @@ def upload_file():
 
 
 
+@app.route('/shp', methods=['POST'])
+def shp_to_geojson():
+    Shp_To_GeoJson()
+    flash('.shp 檔案已經成功轉為 GEJSON 檔了 !，請查看')
+    return redirect('/')
+
+@app.route('/getShp')
+def get_geojson():
+     geojson_contents =Read_GeoJson()
+     print(geojson_contents)
+     return jsonify(geojson_contents)
 
 
 # 在本地端 POST=5000運行

@@ -2,6 +2,8 @@
 import geopandas as gpd
 # 引入 OS 模組
 import os
+import json
+
 os.environ['SHAPE_RESTORE_SHX'] = 'YES'
 # 取得當前檔案下的路徑
 current_path = os.getcwd()
@@ -29,28 +31,29 @@ def Shp_To_GeoJson():
         print(shp_File)
 
 
-
-def Get_GeoJson(subfolder_path):
-    shp_files_Array = []
-    geojson_contents = []  # List to store GeoJSON content
-
-    for filename in os.listdir(subfolder_path):
-        if filename.endswith('.shp'):
-            shp_files_Array.append(filename)
-
-    print("從前端上傳副檔名為 .shp 的檔案如下 : ")
-
-    for shp_File in shp_files_Array:
-        shp_File_path = os.path.join(subfolder_path, shp_File)
-        gdf = gpd.read_file(shp_File_path)
-        output_geojson = f'{shp_File[:-4]}.geojson'
-        gdf.to_file(output_geojson, driver='GeoJSON')
-
-        # Read and append GeoJSON content to the list
-        with open(output_geojson, 'r') as geojson_file:
-            geojson_content = geojson_file.read()
-            geojson_contents.append(geojson_content)
-
-        print(shp_File)
-
-    return geojson_contents
+def Read_GeoJson():
+    # 取得當前檔案下的路徑
+    current_path = os.getcwd()
+    # 所有 GeoJSON 檔案所在的資料夾路徑
+    geojson_folder_path = current_path
+    
+    # 定義空的字典，用於儲存所有副檔名有 .geojson 的檔案的內容
+    geojson_contents_dict = {}
+    # 將所有的 .geojson 檔案透過 Iterate 方法遍歷一次
+    for filename in os.listdir(geojson_folder_path):
+        if filename.endswith('.geojson'):
+            # 在遍歷的時候要定義每一個 geojson 檔案的當前路徑
+            file_path = os.path.join(geojson_folder_path, filename)
+            # 讀取該 geojson 檔案
+            with open(file_path) as file:
+                content = file.read()
+            # 因為原本 geojson 的類型是 String ，要先解析成純 Json 的格式類型
+                json_content = json.loads(content) 
+            # 將轉換為 Json 的檔案放進所定義空的字典
+                geojson_contents_dict[filename] = json_content
+    print("已轉換的 GeoJSON 檔案如下 : ")
+    # 這裡將檔案的名稱及內容印出來，非必要，因為最後會返回 geojson_contents_dict 給前端
+    for filename, json_content in geojson_contents_dict.items():
+        print(f"File: {filename}")
+        print(json_content)
+    return geojson_contents_dict

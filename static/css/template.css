@@ -29,9 +29,10 @@ body{
     border: 1px solid #000;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom:10px;
   }
 
-  #custom-button:hover {
+ #custom-button:hover {
     background-color: #00b28f;
   }
 .flashes{
