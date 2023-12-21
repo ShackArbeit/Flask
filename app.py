@@ -14,6 +14,8 @@ from shp import Read_GeoJson;
 
 from kml import  KML_To_GEO;
 
+from kml import Read_KML_JSON;
+
 
 
 
@@ -28,6 +30,7 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 path = os.getcwd()
 # file Upload
 UPLOAD_FOLDER = os.path.join(path, 'ReceiveUpload')
+
 
 # 若接收上傳檔案的資料夾不存在就創建一個接收資料夾
 if not os.path.isdir(UPLOAD_FOLDER):
@@ -81,7 +84,6 @@ def get_geojson():
 # 這裡為讓使用者可以從前端將 geojson 檔案下載下來的路由設定
 @app.route('/download')
 def DownLoad():
-
     # 取得當前檔案下的路徑
     current_path = os.getcwd()
     # 所有 GeoJSON 檔案所在的資料夾路徑
@@ -139,12 +141,49 @@ def upload_KLM():
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         flash('已經成功上傳檔案了 !', 'conversion')
         return redirect('/kml')
-
+# 以下為將所上傳的 KML 檔案轉為 GEOJSON 檔案的路由設定
 @app.route('/kml/covert',methods=['POST'])
 def CoverKML():
     KML_To_GEO()
     flash('.kml 檔案已經成功轉為 GEJSON 檔了 !，請查看')
     return redirect('/kml')
+# 以下為將從 KML 檔轉為 GEOJSON 檔案呈現在前端的路由設定
+@app.route('/kml/read')
+def ReadKML():
+    geojson_contents =Read_KML_JSON()
+    return jsonify(geojson_contents)
+# 以下為將從 KML 檔轉為 GEOJSON 檔案讓使用者下仔的路由設定
+@app.route('/kml/download')
+def KML_Download():
+    # 取得當前檔案下的路徑
+    current_path = os.getcwd()
+    # 所有 GeoJSON 檔案所在的資料夾路徑
+    subfolder_name2='KML'
+    subfolder_path2=os.path.join(current_path,subfolder_name2) 
+    geojson_folder_path = subfolder_path2
+    # 建立一個空的 Array 存放所有的 Geojson 檔案
+    download_files_array = []
+    # 建立存放 Zip 資料夾的緩衝區
+    zip_buffer = BytesIO()
+    # 使用 zipfile.ZipFile 物件壓縮所有的 Geojson 檔案到 Zip 資料夾
+    with zipfile.ZipFile(zip_buffer, 'a', zipfile.ZIP_DEFLATED) as zip_file:
+    # 將所有的 .geojson 檔案透過 Iterate 方法遍歷一次
+        for filename in os.listdir(geojson_folder_path):
+            if filename.endswith('.geojson'):
+        # 在遍歷的時候要定義每一個 geojson 檔案的當前路徑
+                file_path = os.path.join(geojson_folder_path, filename)
+        # 將每一個 Geojson 的路徑放進之前定義的 Array 內
+                download_files_array.append(file_path)
+                print("已下載的 GeoJSON 檔案如下 : ")
+                print(file_path)
+                print(filename)
+        # 將各別的路徑寫入 Zip 資料夾內
+        for file in download_files_array:
+            zip_file.write(file, os.path.basename(file))
+    # 確保所有的檔案都在 Zip 資料夾內
+    zip_buffer.seek(0)
+    # 返回 Zip 資料夾到前端
+    return send_file(zip_buffer, download_name='files.zip', as_attachment=True)
 
 
 
