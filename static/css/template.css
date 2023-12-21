@@ -9,17 +9,18 @@ body{
 }
 .container{
     height:400px;
-    width:400px;
+    width:800px;
     text-align:center;
+    top:15%;
 }
 .SecondContainer{
     height:400px;
-    width:400px;
+    width:800px;
     text-align:center;
 }
 .KMLContainer{
     height:400px;
-    width:400px;
+    width:800px;
     text-align:center;
     top:250px;
     margin:0 auto;
@@ -31,19 +32,30 @@ body{
     justify-content: space-around;
     align-items: flex-end;
 }
+.fileInput{
+    font-size: 16px;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #2980b9;
+}
 
 #custom-button {
-    padding: 10px;
+    padding: 20px;
     color: white;
     background-color: #009578;
     border: 1px solid #000;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom:10px;
+    font-weight:700;
+    font-size:18px;
   }
 
  #custom-button:hover {
     background-color: #00b28f;
+    left:10px;
   }
 .flashes{
     font-size:25px;

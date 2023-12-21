@@ -17,8 +17,6 @@ from kml import  KML_To_GEO;
 from kml import Read_KML_JSON;
 
 
-
-
 # 初始化 Flask 模組
 app = Flask( __name__, static_folder="static",static_url_path='/static')
 # 設定在 Flask 中使用 Session 狀態管理的密碼金鑰

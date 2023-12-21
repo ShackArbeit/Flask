@@ -7,9 +7,9 @@
     <title>Python Flask Multiple Files Upload Example</title>
 </head>
 <body>
- <div style="position:relative;left:40%;">
+ <div style="position:relative;left:25%;">
     <div class="container"> 
-    <h2 style="margin-bottom:2rem">請上傳想要轉成 GeoJson 的 Shp 檔案</h2>
+    <h1 style="margin-bottom:2rem">請上傳想要轉成 GeoJson 的 Shp 檔案</h1>
     <p >
         {% with messages = get_flashed_messages(category_filter='upload') %}
         {% if messages %}
@@ -24,7 +24,9 @@
       <div class="formContainer">
         <div>
         <form method="post" action="/" enctype="multipart/form-data">
-            <input type="file" name="files[]" multiple="true" autocomplete="off" required>
+            <input type="file" name="files[]" multiple="true" autocomplete="off" required
+        class="fileInput"
+            >
             <input type="submit" value="Submit" id="custom-button">
         </form>
         </div>
@@ -42,7 +44,7 @@
       </div>
     </div>
     <div class="SecondContainer">
-        <h3>點擊這裡前往將 KML 檔轉成 GEOJSON 檔的分頁</h3>
+        <h1 style="margin-bottom:40px">點擊這裡前往將 KML 檔轉成 GEOJSON 檔的分頁</h1>
         <button id="custom-button">
             <a href="http://127.0.0.1:5000/kml"
             style="text-decoration: none;color:white;"
