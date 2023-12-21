@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=4, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/template.css') }}">
-    <title>Python Flask Multiple Files Upload Example</title>
+    <title>將 KML 檔轉成 GEOJSON 檔案</title>
 </head>
 <body>
     <div class="container"> 
-    <h2 style="margin-bottom:2rem">請上傳想要轉成 GeoJson 的 Shp 檔案</h2>
+    <h2 style="margin-bottom:2rem">請上傳想要轉成 GeoJson 的 KML 檔案</h2>
     <p >
         {% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -40,11 +40,5 @@
         </div>
       </div>
     </div>
-    <h3>點擊這裡前往將 KML 檔轉成 GEOJSON 檔的分頁</h3>
-    <button id="custom-button">
-        <a href="http://127.0.0.1:5000/kml"
-        style="text-decoration: none;color:white;"
-        >前往</a>
-    </button>
 </body>
 </html>

@@ -42,7 +42,6 @@ def allowed_file(filename):
 @app.route('/')
 def upload_form():
     return render_template('UpLoad.html')
-
 @app.route('/', methods=['POST'])
 def upload_file():
     # 確保前端的請求方法是 POST 方法
@@ -64,26 +63,21 @@ def upload_file():
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         flash('File(s) successfully uploaded')
         return redirect('/')
-
-
 # 這裡為將 Shp 檔案轉檔的路由設定
 @app.route('/shp', methods=['POST'])
 def shp_to_geojson():
     Shp_To_GeoJson()
     flash('.shp 檔案已經成功轉為 GEJSON 檔了 !，請查看')
     return redirect('/')
-
 # 這裡為將轉成 geojson 的檔案返回給前端的路由設定
 @app.route('/getShp')
 def get_geojson():
      geojson_contents =Read_GeoJson()
      return jsonify(geojson_contents)
-
-from flask import send_file
-
 # 這裡為讓使用者可以從前端將 geojson 檔案下載下來的路由設定
 @app.route('/download')
 def DownLoad():
+
     # 取得當前檔案下的路徑
     current_path = os.getcwd()
     # 所有 GeoJSON 檔案所在的資料夾路徑
@@ -113,6 +107,11 @@ def DownLoad():
     # 返回 Zip 資料夾到前端
     return send_file(zip_buffer, download_name='files.zip', as_attachment=True)
 
+
+
+@app.route('/kml')
+def KmlPage():
+    return render_template('KLM.html')
 
 
 # 在本地端 POST=5000運行
