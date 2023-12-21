@@ -7,28 +7,29 @@
     <title>將 KML 檔轉成 GEOJSON 檔案</title>
 </head>
 <body>
-    <div class="container"> 
+    
+    <div class="KMLContainer"> 
     <h2 style="margin-bottom:2rem">請上傳想要轉成 GeoJson 的 KML 檔案</h2>
-    <p >
+    <p>
         {% with messages = get_flashed_messages() %}
         {% if messages %}
-        <ul class=flashes>
+        <ul class="flashes">
             {% for message in messages %}
-        <li>{{ message }}</li>
-           {% endfor %}
+                <li>{{ message }}</li>
+            {% endfor %}
         </ul>
-            {% endif %}
-            {% endwith %}
+        {% endif %}
+        {% endwith %}
     </p>
-      <div class="formContainer">
+    <div class="formContainer">
         <div>
-        <form method="post" action="/" enctype="multipart/form-data">
-            <input type="file" name="files[]" multiple="true" autocomplete="off" required>
+        <form method="post" action="/kml" enctype="multipart/form-data">
+            <input type="file" name="KMLfiles[]" multiple="true" autocomplete="off" required>
             <input type="submit" value="Submit" id="custom-button">
         </form>
         </div>
         <div style="left:8rem">
-        <form method="post" action="/shp" enctype="multipart/form-data">
+        <form method="post" action="/kml/covert" enctype="multipart/form-data">
             <input type="submit" value="開始轉檔" id="custom-button">
         </form>
         <form method="get" action="/getShp" enctype="multipart/form-data">
@@ -38,7 +39,7 @@
             <input type="submit" value="下載檔案" id="custom-button">
         </form>
         </div>
-      </div>
+    </div>
     </div>
 </body>
 </html>

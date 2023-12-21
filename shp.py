@@ -4,7 +4,7 @@ import geopandas as gpd
 import os
 # 引入 Json 物件
 import json
-from flask import send_file
+
 
 os.environ['SHAPE_RESTORE_SHX'] = 'YES'
 # 取得當前檔案下的路徑

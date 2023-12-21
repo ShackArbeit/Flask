@@ -42,7 +42,7 @@ def allowed_file(filename):
 @app.route('/')
 def upload_form():
     return render_template('UpLoad.html')
-@app.route('/', methods=['POST'])
+@app.route('/',  methods=['POST'])
 def upload_file():
     # 確保前端的請求方法是 POST 方法
     if request.method == 'POST':
@@ -61,8 +61,9 @@ def upload_file():
                 filename = secure_filename(file.filename)
     # 若上述條件都成立就將此檔案放入所創建接收的資料夾內
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        flash('File(s) successfully uploaded')
+        flash('已經成功上傳檔案了 !', 'upload')
         return redirect('/')
+
 # 這裡為將 Shp 檔案轉檔的路由設定
 @app.route('/shp', methods=['POST'])
 def shp_to_geojson():
@@ -108,10 +109,38 @@ def DownLoad():
     return send_file(zip_buffer, download_name='files.zip', as_attachment=True)
 
 
-
+# 以下為 KML 的首頁路由使用樣板引擎 KML.html
+@app.route('/')
 @app.route('/kml')
-def KmlPage():
-    return render_template('KLM.html')
+def upload_form_KML():
+     return render_template('KLM.html')
+# 以下為 KML 首頁上傳檔案的路由設定
+@app.route('/kml',methods=['POST','GET'])
+def upload_KLM():
+    # 確保前端的請求方法是 POST 方法
+    if request.method == 'POST':
+    # 檢查請求中是否包含名為 'files[]' 的檔案，如果沒有則顯示錯誤消息並重新導向回原來的頁面。
+    # 這裡的 files[] 對應的是前端 Input 標籤中 name 屬性的屬性值
+        if 'KMLfiles[]' not in request.files:
+    # 使用 flash 函式報錯，類似 JS 中的 console.error('...')
+            flash('沒有選取任何檔案 !')
+            return redirect(request.url)
+    #  從請求中取得所有 'files[]' 的檔案列表。
+        files = request.files.getlist('KMLfiles[]')
+    # 使用 Iterate 方法遍歷所有上傳的檔案
+        for file in files:
+    # 確保檔案有上傳且上傳的檔案格式(檔名)符合要求
+            if file and allowed_file(file.filename):
+                filename = secure_filename(file.filename)
+    # 若上述條件都成立就將此檔案放入所創建接收的資料夾內
+                file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        flash('已經成功上傳檔案了 !', 'conversion')
+        return redirect('/kml')
+
+@app.route('/kml/covert')
+def CoverKML():
+    
+
 
 
 # 在本地端 POST=5000運行

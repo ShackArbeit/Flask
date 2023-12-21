@@ -10,9 +10,19 @@ body{
 .container{
     height:400px;
     width:400px;
-    margin:0 auto;
-    top:250px;
     text-align:center;
+}
+.SecondContainer{
+    height:400px;
+    width:400px;
+    text-align:center;
+}
+.KMLContainer{
+    height:400px;
+    width:400px;
+    text-align:center;
+    top:250px;
+    margin:0 auto;
 }
 .formContainer{
     display: flex;
