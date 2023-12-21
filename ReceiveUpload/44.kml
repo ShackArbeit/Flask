@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>7. 植物園</name>
+    <Style id="icon-1899-000000-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-000000-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-000000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-000000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-000000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0F9D58-normal">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0F9D58-highlight">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0F9D58">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0F9D58-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0F9D58-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-9C27B0-normal">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-9C27B0-highlight">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-9C27B0">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-9C27B0-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-9C27B0-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-F9A825-normal">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-F9A825-highlight">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-F9A825">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-F9A825-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-F9A825-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>國立自然科學博物館植物園</name>
+      <description><![CDATA[<img src="https://doc-0k-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/hp0u9hupn7tobbno1lbnrtemh4/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGrSHCyrh7ngERPFdROxVwBdebbW1M-UvAE5_FLvT51x3Kym3aEafvDWTg0-pfiOfqGuZC4FI9A6oycqnlOVt4BHdYb-d9QpUwXbHzh0hDCaufjXaYAEAls4JbS6tJ9TV6ZrIoWQXhrtA4C6-t40qDWRDFUGQZmcMRre4gSqz3oj3Eiafwfb7jPfaeMCtwPf1pnt1BLbDCMwpcu7H-GaTRZWKheQXWfLwUPQ9SraJ-sMNy8?session=0&fife" height="200" width="auto" /><br><br>地點:台灣台中市北區。面積4.5公頃，總建築高度為40公尺，英籍設計師葛登納(James Gardner)設計，英國Beck and Politzer公司製作，溫室植物園，設計手法結合教育，館內植物有標示名稱，讓大家認識，其中模擬熱帶雨林的環境，植栽約有400多種，具有都市公園的特質。<br><br><img src="https://doc-10-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/m5qj06atcjlmum2bag0gah8uik/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpzCO605EtLc-UR18QgwQZhc2s0_M1bx32qHNF5KOfEW3Of3-TMnwoZR9Td91xuHRKzZDMHqvCldTYUSlHmbWbHxqJ28HMDdu3bmsNJt674QOF8k1DsHFHYNtEzSwsrQOfXRIGchX1UL6H-9bz5pNc6cKb9bG2qFLUuqvZP-CT_LwtbymrBrp9Zi8oxDbnL45626w5Q-tCEq2AYray8Az7vO2JH2P8F28yKrV-shqQZKQc?session=0&fife" height="200" width="auto" /><br><br><img src="https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/t9884qgldiumfs30ct9iho0r3c/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqq80XKemwD5lfjwVCD9wvQ4DBzhvhsxfsWb19S2rizVljUqjUHgHEwYndw9MVW32snFe9VRrFStesEsRMEWbhjFL5Yx24sHTdxPJ9ZLrco7NgSlbUG9LaW8MQ76LNeMp62OUKtWzcv-zWM8cMW4l3hedS23wjEZjFT5PB2NpqHQNYSLqI996BSE3bR5Vbg7nIRZ0JfKlqOHWODGMI-2FnVPMuRJZmhJ3uxOEOI8vist0M?session=0&fife" height="200" width="auto" />]]></description>
+      <styleUrl>#icon-1899-F9A825</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://doc-0k-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/hp0u9hupn7tobbno1lbnrtemh4/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGrSHCyrh7ngERPFdROxVwBdebbW1M-UvAE5_FLvT51x3Kym3aEafvDWTg0-pfiOfqGuZC4FI9A6oycqnlOVt4BHdYb-d9QpUwXbHzh0hDCaufjXaYAEAls4JbS6tJ9TV6ZrIoWQXhrtA4C6-t40qDWRDFUGQZmcMRre4gSqz3oj3Eiafwfb7jPfaeMCtwPf1pnt1BLbDCMwpcu7H-GaTRZWKheQXWfLwUPQ9SraJ-sMNy8?session=0&fife https://doc-10-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/m5qj06atcjlmum2bag0gah8uik/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpzCO605EtLc-UR18QgwQZhc2s0_M1bx32qHNF5KOfEW3Of3-TMnwoZR9Td91xuHRKzZDMHqvCldTYUSlHmbWbHxqJ28HMDdu3bmsNJt674QOF8k1DsHFHYNtEzSwsrQOfXRIGchX1UL6H-9bz5pNc6cKb9bG2qFLUuqvZP-CT_LwtbymrBrp9Zi8oxDbnL45626w5Q-tCEq2AYray8Az7vO2JH2P8F28yKrV-shqQZKQc?session=0&fife https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/t9884qgldiumfs30ct9iho0r3c/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqq80XKemwD5lfjwVCD9wvQ4DBzhvhsxfsWb19S2rizVljUqjUHgHEwYndw9MVW32snFe9VRrFStesEsRMEWbhjFL5Yx24sHTdxPJ9ZLrco7NgSlbUG9LaW8MQ76LNeMp62OUKtWzcv-zWM8cMW4l3hedS23wjEZjFT5PB2NpqHQNYSLqI996BSE3bR5Vbg7nIRZ0JfKlqOHWODGMI-2FnVPMuRJZmhJ3uxOEOI8vist0M?session=0&fife]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          120.6681777,24.1581157,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jardin botanique de Padoue</name>
+      <description><![CDATA[<img src="https://doc-0c-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/l5hpd8lhr5eafc5mvcobgcgjo8/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGp8yhWT7dGUZKfr0mkWc61grwN-1AK-3M7JSDenqicx6Twmljtq5AFmoB15xv5-GCg4hdLLybGRvqqSGWnq54prYkOqt7EVWPjpYawiLNpD884WOixu8DWZyD1vvaSnDlxJMNPXA7pnAhj7qZrZwd67PiRAWD9yBvBHy5-ecNLwRrVMkKfXKFyowoz_inSUJFCyfIA1Qvk5v8_a-KKiWUGg1THOmxwWdpIegZSr84BYjz4?session=0&fife" height="200" width="auto" /><br><br>地點:義大利威尼斯附近的帕多瓦。目前佔地約22000平方米，上半葉建築設計:安德烈·莫羅，但真正的設計師為:巴勃羅·巴勃羅，他是遵循中世紀封閉花園(Horti Conclusi)的設計手法，將圓形的區域沿著東西南北四個方向均勻劃分成四塊。植物園中有很多的噴泉，透過巨型水車汲水。<br><br><img src="https://doc-0c-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/qfgicm6lqbcjsg6plmetdgq3pk/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqNjbza5k7yWqNbbO1t9OCqWpsMKaVXqSbq8KQynHMKxVDUAtmkNpETRqI8m_MP8tiOiCo7J5kdpQvQex9QOnJBIfq4_GVeASEM8SJg9ws8ODR5PI3m4mQuh1x3KOd5SEtx1baRSs6T9wwUu55QM1ns_kL72AALrDFRxbQOPEYVh91PaunMFl1neUmcMUL9A3YsXbJIAUqSxshtAi5wmXqc_RXntT664f2jnQP3rI78wNw?session=0&fife" height="200" width="auto" /><br><br><img src="https://doc-0o-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/6d6rp0r4ablkomq6ve9nik5oco/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpZ3bp7GgZIT5oWd7yQpB5Tscr3bm0kj9KGGhtiHU1qs-xUyDAuWCAhbeBkisqJ4fTUZV1j9TJmDHtDUsP3byyKMUXqMUVT5S2wdRA1aSwi3ODr-r3ebYk_9vcqf0O5FEg_CyZ-SE_iTqxFqWpyTDJyvrxGCBtU70SJySTvegcyD7OL8E0msWccwLVwwJ1618RmOP7iz2UietCyGZ7wi4od1qoEeodYn6qTL8Ywft7R3Ks?session=0&fife" height="200" width="auto" />]]></description>
+      <styleUrl>#icon-1899-F9A825</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://doc-0c-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/l5hpd8lhr5eafc5mvcobgcgjo8/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGp8yhWT7dGUZKfr0mkWc61grwN-1AK-3M7JSDenqicx6Twmljtq5AFmoB15xv5-GCg4hdLLybGRvqqSGWnq54prYkOqt7EVWPjpYawiLNpD884WOixu8DWZyD1vvaSnDlxJMNPXA7pnAhj7qZrZwd67PiRAWD9yBvBHy5-ecNLwRrVMkKfXKFyowoz_inSUJFCyfIA1Qvk5v8_a-KKiWUGg1THOmxwWdpIegZSr84BYjz4?session=0&fife https://doc-0c-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/qfgicm6lqbcjsg6plmetdgq3pk/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqNjbza5k7yWqNbbO1t9OCqWpsMKaVXqSbq8KQynHMKxVDUAtmkNpETRqI8m_MP8tiOiCo7J5kdpQvQex9QOnJBIfq4_GVeASEM8SJg9ws8ODR5PI3m4mQuh1x3KOd5SEtx1baRSs6T9wwUu55QM1ns_kL72AALrDFRxbQOPEYVh91PaunMFl1neUmcMUL9A3YsXbJIAUqSxshtAi5wmXqc_RXntT664f2jnQP3rI78wNw?session=0&fife https://doc-0o-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/6d6rp0r4ablkomq6ve9nik5oco/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpZ3bp7GgZIT5oWd7yQpB5Tscr3bm0kj9KGGhtiHU1qs-xUyDAuWCAhbeBkisqJ4fTUZV1j9TJmDHtDUsP3byyKMUXqMUVT5S2wdRA1aSwi3ODr-r3ebYk_9vcqf0O5FEg_CyZ-SE_iTqxFqWpyTDJyvrxGCBtU70SJySTvegcyD7OL8E0msWccwLVwwJ1618RmOP7iz2UietCyGZ7wi4od1qoEeodYn6qTL8Ywft7R3Ks?session=0&fife]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          11.8798132,45.3994489,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kew Gardens</name>
+      <description><![CDATA[<img src="https://doc-0c-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/1jrer7cp1h0aojt0210bt9dmdg/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqLSPetqLghufmyyG10fDoNuY9m9dR0i2fncFLddQXRe1FgFOlx979EoX8Orr4QXDKpezT9Y-4I9gakpKqND8bhcIJL-pKOEly5i_nT1YOQYH6p5mSFcF987_JNE29oxIvhhHt9XmtCCnOXfppruy74ITj2m2gksiFWCkMgVQ3BEGCc-Bo7WmUCAnuRBP6cdWlbPN6xIcav2aMSHpG2nv9rrIjGt0vo7pSrW-egzj6sNJY?session=0&fife" height="200" width="auto" /><br><br>地點:英國倫敦西南郊泰唔士河畔列治文區邱。最早在1759年Princess Augusta創立，面積:121公頃(300英畝)，在1770年由 Joseph Banks領導，邱園在園藝、植物分類上才廣為人知。在1840年，威廉•尼爾斯菲尼德進行寬道的景觀設計。曾為最大規模的溫室植物園，現在也有超過五萬多種植物。<br><br><img src="https://doc-0g-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/v1n8iicdcctgbn1tbhepoq1i8s/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpP78zvs2QKlXaqztsk4xJmVdHDgiY0zL9wy3p3ohxnbCpmFuXG-R5zlPE0TAfuV0l4YPunOKT0VW8pFwAWC9T4u7b7w4d4QXlYm4Q3A0BKJumVhxRvzoe75nEzWL5dQJZ3YzLMpxzCMJ-uM4A6ruhKV_wqnHouMJgmx-RO8XTyavAxDYTcMSpkbge3N7LYgifPjAdU5NZtHeOeMM1C1tAY6Yp34mR4YiwcfcWYvaEEjjg?session=0&fife" height="200" width="auto" /><br><br><img src="https://doc-0o-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/6njjlvbo5pqif63n1sjvrjr76s/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGrYzDnBJ-Rug6ST1szh6E4oeJmHkjqxkwClqnhCAVObBOhbxUajM1_7xmdDABmRI-6mRvWvnZ4jfk7q4yyD4LT1-aQX7w_7aQv7RyAsSO4S363kLmqJxP-KtOqJxeSw9JCisezd3bdYa553dKTi_JzXNzhYxF1lrAIzz4N4Xj_OdmiVKFuG0KAMpQNd3U2ic4iCsZAFld_yBkMxJQi1sYDYUatzzjxlcmwX84DYXaddCNY?session=0&fife" height="200" width="auto" />]]></description>
+      <styleUrl>#icon-1899-F9A825</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://doc-0c-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/1jrer7cp1h0aojt0210bt9dmdg/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqLSPetqLghufmyyG10fDoNuY9m9dR0i2fncFLddQXRe1FgFOlx979EoX8Orr4QXDKpezT9Y-4I9gakpKqND8bhcIJL-pKOEly5i_nT1YOQYH6p5mSFcF987_JNE29oxIvhhHt9XmtCCnOXfppruy74ITj2m2gksiFWCkMgVQ3BEGCc-Bo7WmUCAnuRBP6cdWlbPN6xIcav2aMSHpG2nv9rrIjGt0vo7pSrW-egzj6sNJY?session=0&fife https://doc-0g-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/v1n8iicdcctgbn1tbhepoq1i8s/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpP78zvs2QKlXaqztsk4xJmVdHDgiY0zL9wy3p3ohxnbCpmFuXG-R5zlPE0TAfuV0l4YPunOKT0VW8pFwAWC9T4u7b7w4d4QXlYm4Q3A0BKJumVhxRvzoe75nEzWL5dQJZ3YzLMpxzCMJ-uM4A6ruhKV_wqnHouMJgmx-RO8XTyavAxDYTcMSpkbge3N7LYgifPjAdU5NZtHeOeMM1C1tAY6Yp34mR4YiwcfcWYvaEEjjg?session=0&fife https://doc-0o-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/6njjlvbo5pqif63n1sjvrjr76s/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGrYzDnBJ-Rug6ST1szh6E4oeJmHkjqxkwClqnhCAVObBOhbxUajM1_7xmdDABmRI-6mRvWvnZ4jfk7q4yyD4LT1-aQX7w_7aQv7RyAsSO4S363kLmqJxP-KtOqJxeSw9JCisezd3bdYa553dKTi_JzXNzhYxF1lrAIzz4N4Xj_OdmiVKFuG0KAMpQNd3U2ic4iCsZAFld_yBkMxJQi1sYDYUatzzjxlcmwX84DYXaddCNY?session=0&fife]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -0.295573,51.4787438,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Singapore Botanic Gardens</name>
+      <description><![CDATA[<img src="https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/jq98lbi404kddu4as6e3hk1fb4/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqD2RGOf0e_CLR_iy4byrPj96rRB-1QB6rien79L_4Fpnms30kbHnu1i1L_OHIkXkaUt28-veBQLGZbGhJbQ14Wuj4DvnCVT1kP73H30WcIu_-8BNvZDQ1Ms68MJKRDbgKJTE_XF7-kzZWvMNg0UiAnPPj5dXDl-BUzsI2wGItfokq43XIBzUFVUFwcJEyB7IFQ480bpgGRU4fAdkk1_a3oJq19H79Lf9POWEPIE_TCSUc?session=0&fife" height="200" width="auto" /><br><br>地點：新加坡植物園南部為荷蘭路和那比爾路，東部為古魯尼路，西部為泰瑟爾道和古魯尼公園路，北部為武吉知馬路。公園最南端距最北端約2.5公里。勞倫斯·尼文Lawrence Niven是首任園長，並且成為公園的主要設計師。這座公園在1866年又往西北方擴展，它如今的規模和規劃大致上仍以勞倫斯·尼文百餘年前的設計藍圖為基礎。像是在1866年開挖的「天鹅湖」Swan Lake，或是在1868年落成的「伯基爾館」Burkill Hall目前也都還在植物園裡。植物園保存了6公頃在植物園成立前就已經存在的小型熱帶雨林，也讓新加坡成為全球少數在市區裡有著熱帶雨林的國家。<br><br><img src="https://doc-0s-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/c6at3bmtbev92sjh904dk0s69k/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpvQyUrO459Ofan0zmaEqSEcbfVzZINJQk8akfsqJmthUQIr9jp93-IzawCgZzze4V5rfrT4rkwzoAsA1zhpvnlW0wjqCJWiXZjmBr-QCga-W996J05ueiw3JXnntw1JtJoi0HdgQrqEDj1WnIl5j90Gmh5Dvh__FvKD_Z0WcHcPpilnogYplkyTZAMZ78X8XFY83pNJiL7FkxMV4jBs2VaFOSaNnj5q9SzuoddHl8vWvY?session=0&fife" height="200" width="auto" />]]></description>
+      <styleUrl>#icon-1899-F9A825</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/jq98lbi404kddu4as6e3hk1fb4/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqD2RGOf0e_CLR_iy4byrPj96rRB-1QB6rien79L_4Fpnms30kbHnu1i1L_OHIkXkaUt28-veBQLGZbGhJbQ14Wuj4DvnCVT1kP73H30WcIu_-8BNvZDQ1Ms68MJKRDbgKJTE_XF7-kzZWvMNg0UiAnPPj5dXDl-BUzsI2wGItfokq43XIBzUFVUFwcJEyB7IFQ480bpgGRU4fAdkk1_a3oJq19H79Lf9POWEPIE_TCSUc?session=0&fife https://doc-0s-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/c6at3bmtbev92sjh904dk0s69k/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpvQyUrO459Ofan0zmaEqSEcbfVzZINJQk8akfsqJmthUQIr9jp93-IzawCgZzze4V5rfrT4rkwzoAsA1zhpvnlW0wjqCJWiXZjmBr-QCga-W996J05ueiw3JXnntw1JtJoi0HdgQrqEDj1WnIl5j90Gmh5Dvh__FvKD_Z0WcHcPpilnogYplkyTZAMZ78X8XFY83pNJiL7FkxMV4jBs2VaFOSaNnj5q9SzuoddHl8vWvY?session=0&fife]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          103.8161341,1.3144091,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Botanical Garden Munich-Nymphenburg</name>
+      <description><![CDATA[<img src="https://doc-10-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/8akhssm43ujhf85vta2qf9b0cc/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqOYU3D2SbHSQ6XEP5vyJu5F7PuwgqUPQN-whJm3sRZRpggwvQyEzcBGJlAskdjxa_6MoYKvhCi2kcvxNMyOaNKUPPH98QSK0LJzMlsPUVI0vHB1SJAUxc9-EGPRp3E6h6cVIX87iUMZBNa0PpO5jDu0ZOGZ7ykQql8OqRhUeMbH9lx5VpLlPJwubqxGe0raMJLyA3JE-SSR1xJupEm9MahYmyUuX7g8ZWMg3S2CWGCx_8?session=0&fife" height="200" width="auto" /><br><br>地點：是於德國慕尼黑Menzinger大街的植物園和植物園。 <br>根據景觀設計師弗里德里希·路德維希·馮·施克爾（Friedrich Ludwig von Sckell）的計劃於1804年至1812年間創建的，並於1812年5月23日開放。那時花園是在弗朗茨·馮·保拉·馮·施蘭克（Franz von Paula von Schrank）的指導下進行的。倫巴赫廣場（Lenbachplatz）的新古典主義入口，建於1812年，由葡萄牙建築師伊曼紐爾·約瑟夫·德·黑里戈延（Joseph d'Heigoyen）設計，至今仍是花園的地標。<br><br><img src="https://doc-00-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/2navpsna0apsjuh04fvvpuko6o/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGp_s5gzPLstKQY2q_L4GP6qj0OKYx_0ERzkiHmxQ6otscEWBAu5LXj_iEXovOlZ74Dxf4UFhLOxjxth3YIBPhorCV1bNlA5lDdIYBNTXX76_zCbUAUVj_n-GPqreO1XNjzWpUt31oheqRl33Zoi34jk5s0X92u0auQDTooKhz32igIwUZnnB8rc6IJlWSB4EzPNIyrB0h5JgkmUVdYIx7Azqfb5KxbEydruEzOyQxDj2aQ?session=0&fife" height="200" width="auto" />]]></description>
+      <styleUrl>#icon-1899-F9A825</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://doc-10-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/8akhssm43ujhf85vta2qf9b0cc/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqOYU3D2SbHSQ6XEP5vyJu5F7PuwgqUPQN-whJm3sRZRpggwvQyEzcBGJlAskdjxa_6MoYKvhCi2kcvxNMyOaNKUPPH98QSK0LJzMlsPUVI0vHB1SJAUxc9-EGPRp3E6h6cVIX87iUMZBNa0PpO5jDu0ZOGZ7ykQql8OqRhUeMbH9lx5VpLlPJwubqxGe0raMJLyA3JE-SSR1xJupEm9MahYmyUuX7g8ZWMg3S2CWGCx_8?session=0&fife https://doc-00-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/2navpsna0apsjuh04fvvpuko6o/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGp_s5gzPLstKQY2q_L4GP6qj0OKYx_0ERzkiHmxQ6otscEWBAu5LXj_iEXovOlZ74Dxf4UFhLOxjxth3YIBPhorCV1bNlA5lDdIYBNTXX76_zCbUAUVj_n-GPqreO1XNjzWpUt31oheqRl33Zoi34jk5s0X92u0auQDTooKhz32igIwUZnnB8rc6IJlWSB4EzPNIyrB0h5JgkmUVdYIx7Azqfb5KxbEydruEzOyQxDj2aQ?session=0&fife]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          11.5010734,48.1638328,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>雪梨皇家植物園</name>
+      <description><![CDATA[<img src="https://doc-0g-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/1d6i7loup601v7h88gs7jhn27c/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpu1j0KuzoVFeRRkGNEf5logZkUM4stFQ5vyKdDESskbhGfWYn81XabcZkC3n7tEZNq4N1auSaCl716W6gqztKnOYAGex7kwX9SCGALjo4Sm0XGCq_LGT7KCHYgTwngmxsxUIx7ui0BHtJOpIfwSfT4KmtoFWeQyKN91-WcJPiybN14W2sUdlPNoSjdvPfGJmL0nwl190fXl5JOyVeaK2Rca48BwUffCgZMQWfd-lmsmmk?session=0&fife" height="200" width="auto" /><br><br>地點:澳洲新南威爾斯州。創辦人拉克倫·麥覺理總督，雪梨皇家植物園1816年建立，有著「雪梨之肺」的稱號。開放式的植物園，佔地30公頃（74英畝）。提供著四萬多種的植物，像是昆士蘭瓶幹樹、香草植物、熱帶、蕨類、一年四季不同時間的花卉盛開期等等澳洲歷史最久的科學研究機構，也是雪梨第一座公園。<br><br><img src="https://doc-0k-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/cm4flu8t3ivl2ct23krsk7nsj8/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGrz1x_s3mPReCtLUHJR4BI32KlGp54vkl0h_UUDO2rAGCk6NXLv_lOjdJeQeSCCBestmTDzQzTh1AMwydRXYl-LJ7WuOWU8xLUNAfYQGFQzmt1Sze_u6Aqr7ZgW4ianoz7mnROrFqwbvEbvhxCcRrTg9oTxUTTUTRpH89p_F-rrWhJi8gjsuxTF6n11J9WcE7lRz9QOivKtZOKo9FM5mmu1dl2eDfIGiZJlscxjIQ2vz6I?session=0&fife" height="200" width="auto" /><br><br><img src="https://doc-0o-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/velb53hacbe7jk6jlqki5l3j84/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGr-vTAPtJA1j4SHZ1oahIlvESRTm0yxOaDDCGfcSbS1n0UYrSfzREQZXHZCxeNockIPybO3cLg4AqM7aA2yufnVYum5m8UdZfus1-nNC4IGPweqny0Dgh1hHVEd6XELCK9K0WwIvYfj7p2yv5fRvNsJFaREQjkpw_soRZjTZwtgpKLw5cstoRE1rQl6a1D6ddGuaClth9bwikuxRjn6c6HHjYSdaoP2IPwqJbP6wnEo2N0?session=0&fife" height="200" width="auto" />]]></description>
+      <styleUrl>#icon-1899-9C27B0</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://doc-0g-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/1d6i7loup601v7h88gs7jhn27c/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpu1j0KuzoVFeRRkGNEf5logZkUM4stFQ5vyKdDESskbhGfWYn81XabcZkC3n7tEZNq4N1auSaCl716W6gqztKnOYAGex7kwX9SCGALjo4Sm0XGCq_LGT7KCHYgTwngmxsxUIx7ui0BHtJOpIfwSfT4KmtoFWeQyKN91-WcJPiybN14W2sUdlPNoSjdvPfGJmL0nwl190fXl5JOyVeaK2Rca48BwUffCgZMQWfd-lmsmmk?session=0&fife https://doc-0k-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/cm4flu8t3ivl2ct23krsk7nsj8/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGrz1x_s3mPReCtLUHJR4BI32KlGp54vkl0h_UUDO2rAGCk6NXLv_lOjdJeQeSCCBestmTDzQzTh1AMwydRXYl-LJ7WuOWU8xLUNAfYQGFQzmt1Sze_u6Aqr7ZgW4ianoz7mnROrFqwbvEbvhxCcRrTg9oTxUTTUTRpH89p_F-rrWhJi8gjsuxTF6n11J9WcE7lRz9QOivKtZOKo9FM5mmu1dl2eDfIGiZJlscxjIQ2vz6I?session=0&fife https://doc-0o-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/velb53hacbe7jk6jlqki5l3j84/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGr-vTAPtJA1j4SHZ1oahIlvESRTm0yxOaDDCGfcSbS1n0UYrSfzREQZXHZCxeNockIPybO3cLg4AqM7aA2yufnVYum5m8UdZfus1-nNC4IGPweqny0Dgh1hHVEd6XELCK9K0WwIvYfj7p2yv5fRvNsJFaREQjkpw_soRZjTZwtgpKLw5cstoRE1rQl6a1D6ddGuaClth9bwikuxRjn6c6HHjYSdaoP2IPwqJbP6wnEo2N0?session=0&fife]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          151.2165708,-33.8641859,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>布查德花園</name>
+      <description><![CDATA[<img src="https://doc-14-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/i80cqf31vi1e47e2lg7llbtp2o/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpB9COt9pLkTmGYNl8cBb_TCaIaE_r0kujzZKkY2EKUe-yTfep1Zc4XAMiAV2h-JPt3TQA-bdIkIwHshGKpM9oIX4tQ_Ktj5w68veQzHNeLn8IOza0ZwFBbsV_8GsCqodRaK0KalpRqDkScYXn36toylvJVnzH7IQ2paYoL9NtFRNb6kk5PDLqem9iiOJWNZ4M7XApavm8Za9Xns8MweGRhiBiB479GGDdnnyzNZSDLk0o?session=0&fife" height="200" width="auto" /><br><br>地點:加拿大不列顛哥倫比亞省溫哥華島中薩尼奇的布倫活灣。由珍妮·布查德（Jennie Butchart）指導下於1904年至1939年間改建而成。佔地5.26公頃。原本這裡是石礦場和混凝土工廠，但隨著礦場採伐殆盡，布查德夫人開始以花卉美化這裡，後來就成為了布查德花園。2004年，工作人員執行了一系列的花園重整。五十個專職或兼職人員，培養超過百萬花壇植物在某些700不同品種，以確保每年三月到十月不間斷盛開。<br><br><img src="https://doc-14-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/2ahl1lfchtdrh1edo997ccjq0g/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGrjKEQNxAC1PxYwmvjlUXvDu4ZNwjFBkWg8B2Lw4P9kn7QnpAZhDjBXm7Ks_wFvSKxl0w6z-_BcCMGxkx_4vArTnazfP_GsnFubPO7z34065SXJc4x5GmPC3NXR1shbHxayhB9aL1taIhcMhSTWWKljFvu9iaGt6cORtbsqFyAm3gEIYUoBWD5sDzJI3PAly8Tb7NctsOxvLtwiBc3bzxm__0Rv_nvj5apUIjb4ruRnecM?session=0&fife" height="200" width="auto" /><br><br><img src="https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/d8eqfs33t14mskal8ilug64mks/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGr3ilPLgG7JrEVtKbRSrtunQo6zSOPPV16P6fdq5MRWMREnnKggbkKbeqoZSZzTA_LAZ5fTsVCpWDfHKBeTLK4pXo8_P0XjnMydnXGT6etVeIY75DDOrVBRtJWQo8t2IkVPncQoFQiST7qVAw3cXbjzI3zeOqqtPM5l7MVd8KhP1vLJrLpf8L8mO2hweN2IWTtjgUThtxorusIVWv2WuJ7DIn61kyfRzZyHbwn-Nc8-cus?session=0&fife" height="200" width="auto" />]]></description>
+      <styleUrl>#icon-1899-9C27B0</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://doc-14-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/i80cqf31vi1e47e2lg7llbtp2o/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpB9COt9pLkTmGYNl8cBb_TCaIaE_r0kujzZKkY2EKUe-yTfep1Zc4XAMiAV2h-JPt3TQA-bdIkIwHshGKpM9oIX4tQ_Ktj5w68veQzHNeLn8IOza0ZwFBbsV_8GsCqodRaK0KalpRqDkScYXn36toylvJVnzH7IQ2paYoL9NtFRNb6kk5PDLqem9iiOJWNZ4M7XApavm8Za9Xns8MweGRhiBiB479GGDdnnyzNZSDLk0o?session=0&fife https://doc-14-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/2ahl1lfchtdrh1edo997ccjq0g/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGrjKEQNxAC1PxYwmvjlUXvDu4ZNwjFBkWg8B2Lw4P9kn7QnpAZhDjBXm7Ks_wFvSKxl0w6z-_BcCMGxkx_4vArTnazfP_GsnFubPO7z34065SXJc4x5GmPC3NXR1shbHxayhB9aL1taIhcMhSTWWKljFvu9iaGt6cORtbsqFyAm3gEIYUoBWD5sDzJI3PAly8Tb7NctsOxvLtwiBc3bzxm__0Rv_nvj5apUIjb4ruRnecM?session=0&fife https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/d8eqfs33t14mskal8ilug64mks/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGr3ilPLgG7JrEVtKbRSrtunQo6zSOPPV16P6fdq5MRWMREnnKggbkKbeqoZSZzTA_LAZ5fTsVCpWDfHKBeTLK4pXo8_P0XjnMydnXGT6etVeIY75DDOrVBRtJWQo8t2IkVPncQoFQiST7qVAw3cXbjzI3zeOqqtPM5l7MVd8KhP1vLJrLpf8L8mO2hweN2IWTtjgUThtxorusIVWv2WuJ7DIn61kyfRzZyHbwn-Nc8-cus?session=0&fife]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -123.4706261,48.5635765,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Denver Botanic Gardens</name>
+      <description><![CDATA[<img src="https://doc-0s-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/m0mpspeoafshumpht2diar6vsg/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpYg0vApmNUGV5V4IVWmOzBlNTm-Tb98GPNVrY60KLnTTbf4pVHe9igC9wHrTjgVthAOoVyPg41wcixatOdaI13KXd3s2PMgR5p9ylfC4CBw8PrweequdMJS752tZ1a1g3l5BSMWGSGrIBE0qiFed37VqzZuGr3JesimXdjIP8GiD9GgA2XUqWMVHirxCT3Hbti4CV579T4wTzKcnRcFAbaqL5hUrlrfCVPl_G1bYJNJ4Q?session=0&fife" height="200" width="auto" /><br><br>地點:美國科羅拉多州。佔地面積23英畝是北美最大的生長有世界各地冷温帶植物的植物園。丹佛植物園的神奇之處就是將各地的冷温帶植物聚聚一起。<br><br><img src="https://doc-14-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/5e1gvnshlilp3tl3ma1fcgpk88/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGq7dLfMUqxTpm8qZ6L3qGHumGd9hDw3B6emZMfnxhs53Yv-VxjOxdKu2YjnmPY1G1bWX2KfHOLZUipt4VFY1m4zfP7q8URTqHBnFubgDZ4wnBWQY64m0SVz70scNhDFS5fBh3BWoRKX5UkCjy4_aH3e0RgrTEbixrZZxGSDBYlFp4Lvzq6rz7P5x4bvE6Txa1sn4JcZoGtdQMZNp5MNC5mhfpVb8xkAI4xgmTz9yVZboEQ?session=0&fife" height="200" width="auto" /><br><br><img src="https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/t34m8idoe4gtadknt8emoeqa6k/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqc4ux6EIBIumSqdhmaPI4g6xIFNH9quQPotq1xRiFxXLuYSYRRCRRTbQkvj09_UKFaqIY2vHtAB5RX_eb9B-TWl2fZr-ihTPeTOPYCsbY0UScXBiD9Qb5Q1qj5MCj2vYSw4ZJ0kMV-GeMc6fReOcrx7ZYwQsiT1AwvMPciOnzUVtt8AoVqbGH3tFWNJV3hd9czVVWtcVwhDqDny2OYPVk2joHKlTR46GwR89m8lJbY5LA?session=0&fife" height="200" width="auto" />]]></description>
+      <styleUrl>#icon-1899-9C27B0</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://doc-0s-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/m0mpspeoafshumpht2diar6vsg/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpYg0vApmNUGV5V4IVWmOzBlNTm-Tb98GPNVrY60KLnTTbf4pVHe9igC9wHrTjgVthAOoVyPg41wcixatOdaI13KXd3s2PMgR5p9ylfC4CBw8PrweequdMJS752tZ1a1g3l5BSMWGSGrIBE0qiFed37VqzZuGr3JesimXdjIP8GiD9GgA2XUqWMVHirxCT3Hbti4CV579T4wTzKcnRcFAbaqL5hUrlrfCVPl_G1bYJNJ4Q?session=0&fife https://doc-14-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/5e1gvnshlilp3tl3ma1fcgpk88/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGq7dLfMUqxTpm8qZ6L3qGHumGd9hDw3B6emZMfnxhs53Yv-VxjOxdKu2YjnmPY1G1bWX2KfHOLZUipt4VFY1m4zfP7q8URTqHBnFubgDZ4wnBWQY64m0SVz70scNhDFS5fBh3BWoRKX5UkCjy4_aH3e0RgrTEbixrZZxGSDBYlFp4Lvzq6rz7P5x4bvE6Txa1sn4JcZoGtdQMZNp5MNC5mhfpVb8xkAI4xgmTz9yVZboEQ?session=0&fife https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/t34m8idoe4gtadknt8emoeqa6k/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqc4ux6EIBIumSqdhmaPI4g6xIFNH9quQPotq1xRiFxXLuYSYRRCRRTbQkvj09_UKFaqIY2vHtAB5RX_eb9B-TWl2fZr-ihTPeTOPYCsbY0UScXBiD9Qb5Q1qj5MCj2vYSw4ZJ0kMV-GeMc6fReOcrx7ZYwQsiT1AwvMPciOnzUVtt8AoVqbGH3tFWNJV3hd9czVVWtcVwhDqDny2OYPVk2joHKlTR46GwR89m8lJbY5LA?session=0&fife]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -104.9601257,39.7321335,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>夏威夷热带植物园</name>
+      <description><![CDATA[<img src="https://doc-10-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/f1ldda3ud87msh82po6ieapq64/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGr9Dw7i1FCo8KfBl3B2Sc2CuWy6OQmoIyOTVgb2hWtXUJqoeulLs-bH08FkvEwQzL24jJueToiHSObTJwmcYR_3ri5yR-Z_8v11X_Sa63VwtRCiDtoNW39405Uh6woQ0BIrSjM6lS1fnpqOWgF_t1GuAIZIBewV-vRZc0c1sZb6rgxY1hr8AOoNeeq7c1DvgJMupKzezZXR-pHOBQHkPuP7AfMS4ofLgNmnWwfxLGwLJLE?session=0&fife" height="200" width="auto" /><br><br>地點：位於夏威夷希洛市奧諾密厄灣，有來自世界各地的1800種植物<br><br><img src="https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/rniefqvtb36alfm0nj8rmm7d80/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGrSZ1X8iMfMHSybpT65xWrb08WKyZjIY6f3QKRu-QEcLfwSckhTXRAbJJ_-yO5mJVYGGZce2nnNVbGQcB4xcbm0KGbonIQaJjCheDv23KAR0nSEYdpwnuLedh2IRfaZCfFV-DTOQTxhdwAft6vWHFGT7Z5cskAOFI1TtA0yeumIdurb2g_wIrhoaE0IR4U4pNLsgfBwW5EZNT5pAeR5pjLnNv7kwAHybRYHhIcBjMnoW5s?session=0&fife" height="200" width="auto" />]]></description>
+      <styleUrl>#icon-1899-F9A825</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://doc-10-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/f1ldda3ud87msh82po6ieapq64/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGr9Dw7i1FCo8KfBl3B2Sc2CuWy6OQmoIyOTVgb2hWtXUJqoeulLs-bH08FkvEwQzL24jJueToiHSObTJwmcYR_3ri5yR-Z_8v11X_Sa63VwtRCiDtoNW39405Uh6woQ0BIrSjM6lS1fnpqOWgF_t1GuAIZIBewV-vRZc0c1sZb6rgxY1hr8AOoNeeq7c1DvgJMupKzezZXR-pHOBQHkPuP7AfMS4ofLgNmnWwfxLGwLJLE?session=0&fife https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/rniefqvtb36alfm0nj8rmm7d80/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGrSZ1X8iMfMHSybpT65xWrb08WKyZjIY6f3QKRu-QEcLfwSckhTXRAbJJ_-yO5mJVYGGZce2nnNVbGQcB4xcbm0KGbonIQaJjCheDv23KAR0nSEYdpwnuLedh2IRfaZCfFV-DTOQTxhdwAft6vWHFGT7Z5cskAOFI1TtA0yeumIdurb2g_wIrhoaE0IR4U4pNLsgfBwW5EZNT5pAeR5pjLnNv7kwAHybRYHhIcBjMnoW5s?session=0&fife]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -155.096024,19.810911,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>華南植物園</name>
+      <description>地點：中國廣東省廣州市天河區，是中國南方地區唯一的國家級植物園，目前世界上最大的南亞熱帶植物園，也是中國國內歷史最久、保存物種最多、面積最大的植物園之一，由國家林草局、住房和城鄉建設部、中國科學院、廣東省和廣州市人民政府合作共建，依託中國科學院華南植物園設立，由廣州園區和肇慶鼎湖山園區組成，有「中國南方綠寶石」之稱號。</description>
+      <styleUrl>#icon-1899-000000</styleUrl>
+      <Point>
+        <coordinates>
+          113.364357,23.186944,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jardim Botânico do Rio de Janeiro</name>
+      <description>地點：里約熱內盧南部區的雅爾丁·博塔尼科區。植物園展示了巴西和外國植物的多樣性。大約有6,500種物種分佈在54公頃的區域以及眾多的溫室中。花園還設有具有歷史，藝術和考古意義的紀念碑。</description>
+      <styleUrl>#icon-1899-000000</styleUrl>
+      <Point>
+        <coordinates>
+          -43.2250381,-22.9673717,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Desert Botanical Garden</name>
+      <description>地點：美國亞利桑那鳳凰城，鳳凰城的沙漠植物園成立於1937年，佔地145英畝內有五萬種沙漠植物，其中三分之一爲本地所有，139種爲罕見的、受威脅的或者是瀕臨滅絕的植物。行走在植物，花，鳥，蝴蝶和一些野生小動物的環境中，宛如世外桃源一般</description>
+      <styleUrl>#icon-1899-000000</styleUrl>
+      <Point>
+        <coordinates>
+          -111.9446351,33.4618407,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>蒙特婁植物園</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -73.5630089,45.5600018,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>台東原生應用植物園</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          121.1040402,22.8527693,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Santa Barbara Botanic Garden</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -119.7100254,34.4565481,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name/>
+    </Placemark>
+    <Placemark>
+      <name/>
+    </Placemark>
+    <Placemark>
+      <name>台北植物園</name>
+      <description><![CDATA[<img src="https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/lpl3d4mp1jprqq47atqoc92is0/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGo3pLmtRJ-5J5ecbmhnr-KMVIZVY0od1ApL0ggbS7Y003Eak6zLCWLuGtX2MCXBH6Mb69H-Dhg66njNek64ynM8RHmfyfLy8MxYcsWKeR3iO0MaNK-uoFGoteEXtxWI97SyZILkQ6cG5qvQyT7Tfc_A6MPvuLxRuSa9dku2lmNUsQZ3AW6BWd3HkX50UC37CO0pmbngDoSvOo-v38qR9HLqqSgNPgf6G8MKhcjol6UF8Rg?session=0&fife" height="200" width="auto" /><br><br>台北植物園位於台灣 台北，佔地約8.2公頃，最早於1895年建立，當時日本總督府為瞭解本島樹木性狀及配合造林需要而成立苗圃，直到1921年才轉型為的植物園，現今隸屬於行政院農業委員會林業試驗所。設計師:不詳，蓮花池為台北植物園內最知名的季節限定大景，每到6-8月份，園區內就會人滿為患。運用水景、植物與後方建築物的對比性促成空間中的開闊性、穿透性。<br><br><img src="https://doc-10-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/im8g1u27q8fpv8bvnfdqe7t2b0/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpBmi9Z57sgP5J8gq0BwKQVKkFLX1pwHEjWdpMXUgJqujaU9Bntz2AJn-q6wPGMS4AjBGiZAuOyWsrG_aJyMQq111rxO-8yeJdUBBLgthsWrV1YJCU0lEkDZo8S7Ooj0qNcSPRDHVzM-yOH0FTJjs1AixummxgoCwyayPCKZJ7dLfMS9yfExCWPD1dsotiD024EkbmwhduHooZX49dG3lGOJDzCoigiRhcPNvZnKkgbs6U?session=0&fife" height="200" width="auto" /><br><br><img src="https://doc-14-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/tb0j9q3fthn8i26ubof9d13nb8/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGoMpTgXdfXkWBgct-ZeFU_mAl8FpX-0aJ2ZXSiY207eQ345tgBVrwWHu8H8jpDu3SO_21GRzBJLrO65AkDR0JLrIsTF-a7wvRCORzVLj5bfEJmq_RUdXTLUQT3wamEAnrtr1l3wZSclXvzoTAA6SK01nkpQ89U2WNQfMF0wmyb9Z8zGgT7uH4GkWnOTw-pj045HD4mkEkvcnzRimFNJtUN6oz8fzniAgjxzDJLE2N7Vc3g?session=0&fife" height="200" width="auto" />]]></description>
+      <styleUrl>#icon-1899-0F9D58</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/lpl3d4mp1jprqq47atqoc92is0/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGo3pLmtRJ-5J5ecbmhnr-KMVIZVY0od1ApL0ggbS7Y003Eak6zLCWLuGtX2MCXBH6Mb69H-Dhg66njNek64ynM8RHmfyfLy8MxYcsWKeR3iO0MaNK-uoFGoteEXtxWI97SyZILkQ6cG5qvQyT7Tfc_A6MPvuLxRuSa9dku2lmNUsQZ3AW6BWd3HkX50UC37CO0pmbngDoSvOo-v38qR9HLqqSgNPgf6G8MKhcjol6UF8Rg?session=0&fife https://doc-10-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/im8g1u27q8fpv8bvnfdqe7t2b0/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpBmi9Z57sgP5J8gq0BwKQVKkFLX1pwHEjWdpMXUgJqujaU9Bntz2AJn-q6wPGMS4AjBGiZAuOyWsrG_aJyMQq111rxO-8yeJdUBBLgthsWrV1YJCU0lEkDZo8S7Ooj0qNcSPRDHVzM-yOH0FTJjs1AixummxgoCwyayPCKZJ7dLfMS9yfExCWPD1dsotiD024EkbmwhduHooZX49dG3lGOJDzCoigiRhcPNvZnKkgbs6U?session=0&fife https://doc-14-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/tb0j9q3fthn8i26ubof9d13nb8/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGoMpTgXdfXkWBgct-ZeFU_mAl8FpX-0aJ2ZXSiY207eQ345tgBVrwWHu8H8jpDu3SO_21GRzBJLrO65AkDR0JLrIsTF-a7wvRCORzVLj5bfEJmq_RUdXTLUQT3wamEAnrtr1l3wZSclXvzoTAA6SK01nkpQ89U2WNQfMF0wmyb9Z8zGgT7uH4GkWnOTw-pj045HD4mkEkvcnzRimFNJtUN6oz8fzniAgjxzDJLE2N7Vc3g?session=0&fife]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          121.5094593,25.0318511,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>園林植物園</name>
+      <description><![CDATA[<img src="https://doc-14-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/0qi1tu1o19d6vhsm23d7880ctc/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGo5dHDdoyhtQIj4Gj-Bzq-Y78kGcF1wvQO40g4Gov3EinfEW-CyVQxWP3FOYSJuzvwi8LJTs5iD73Qgy-Tx-VSobbq6_QtoOIDecsYJvznU0dT3imlh9w1iB3q6NJFHsnoclAU-wc69a0d4e30dm28c3szEQcMvoOqHgQyDFlfaiBQlOavRBqmMGR93W_SR1s2jYxYZW5iNcOKeZsF8WkvtPauw2MaqruZhWNoz3sba0RA?session=0&fife" height="200" width="auto" /><br><br>廈門園林植物園位於中國 廈門市思明區，建於西元1960年，佔地約26平方公里。北京林學院園林系專家組規劃設計。藤本區展示趣味植物，側重於滿足人們重返和陶醉大自然的心態，塑造一個原始自然、富含野趣的山林風光。沙生植物區利用蜿蜒道路的設計手法讓整體空間有更寬闊的效果，兩旁植有各種多肉植物，小仙人掌與大仙人掌的高低落差能感覺出連續性以及空間中的趣味性。<br><br><img src="https://doc-14-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/sst98vpb6ggv4g1lp5p8n4bghg/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpppaVA2_eRCbuId2rXd_RKMcN54IYMtnwS0alwo4Ta51Pu3s0gfDipSFyI4MDNy498Z5nzbvwt5i49v9kDqvwp9ZkootVa9dETqwrgAPiNgg3G6RF-cs0HE2UqUmqFHiU-AFafJutGRnL3I4V4d6PdCeYw7PAAO05zidxfuQPMgXZonEhKHTsQsljnFetobLho8i-R21jcjs-i5TinXHIG2N55yF5O0KuDA6Gbt8FYLnM?session=0&fife" height="200" width="auto" /><br><br><img src="https://doc-0s-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/mn052htsj3iqj72tugrmjjc0go/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGp4TZ0bwL9kHiK6P6Og2SkW4IbXl90ayO72CT7A_gz0DejuIkn-lUA_xsFL_Zw1V_SBw8k6RtsD5ovlqPGyjWNCvRVZE5T-OFW6tM2SPNmq67ddzFUn5rkygmBScgynWkvEntlh00j5nca4hC0Q2DHQxdG3zwfY4uGgbiq9aryn6pzxLxtPXlg8VU18lMjpToOK-Yqnk9_RTmtPLRu3nP_ccq9PSXqjwe0ZXvtAGVnsO30?session=0&fife" height="200" width="auto" />]]></description>
+      <styleUrl>#icon-1899-0F9D58</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://doc-14-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/0qi1tu1o19d6vhsm23d7880ctc/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGo5dHDdoyhtQIj4Gj-Bzq-Y78kGcF1wvQO40g4Gov3EinfEW-CyVQxWP3FOYSJuzvwi8LJTs5iD73Qgy-Tx-VSobbq6_QtoOIDecsYJvznU0dT3imlh9w1iB3q6NJFHsnoclAU-wc69a0d4e30dm28c3szEQcMvoOqHgQyDFlfaiBQlOavRBqmMGR93W_SR1s2jYxYZW5iNcOKeZsF8WkvtPauw2MaqruZhWNoz3sba0RA?session=0&fife https://doc-14-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/sst98vpb6ggv4g1lp5p8n4bghg/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpppaVA2_eRCbuId2rXd_RKMcN54IYMtnwS0alwo4Ta51Pu3s0gfDipSFyI4MDNy498Z5nzbvwt5i49v9kDqvwp9ZkootVa9dETqwrgAPiNgg3G6RF-cs0HE2UqUmqFHiU-AFafJutGRnL3I4V4d6PdCeYw7PAAO05zidxfuQPMgXZonEhKHTsQsljnFetobLho8i-R21jcjs-i5TinXHIG2N55yF5O0KuDA6Gbt8FYLnM?session=0&fife https://doc-0s-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/mn052htsj3iqj72tugrmjjc0go/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGp4TZ0bwL9kHiK6P6Og2SkW4IbXl90ayO72CT7A_gz0DejuIkn-lUA_xsFL_Zw1V_SBw8k6RtsD5ovlqPGyjWNCvRVZE5T-OFW6tM2SPNmq67ddzFUn5rkygmBScgynWkvEntlh00j5nca4hC0Q2DHQxdG3zwfY4uGgbiq9aryn6pzxLxtPXlg8VU18lMjpToOK-Yqnk9_RTmtPLRu3nP_ccq9PSXqjwe0ZXvtAGVnsO30?session=0&fife]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          118.1034894,24.4463672,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>京都府立植物園</name>
+      <description><![CDATA[<img src="https://doc-0k-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/6nn5r1b2tqpq8vtjng6jc2i1ak/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGp5SriIv8fXFay3-FQWstaOJUbGH5tcvJsXQMdGGByPgO4sGFDAH9oUtzmxovKhx3uQrN1UWp2ffainttbNbrsnF8fLMaxhH5DqImpD2JqOKyGxP0OVepULtXYdEXui0YvhLgbDo6wLDS28CX3wZ_1zPV8iuibjY1nT6XgTrDwgGG4y531mY6VVCMHfPiyO0ieHQFXRkmltHmH0qvPy23IFf8IrUhzltOaJGm9eKwz_lcg?session=0&fife" height="200" width="auto" /><br><br>京都府立植物園位都府京都市左京區，建於1924年，佔地24公頃，設計師:不詳。因園內植有數量多且不同品種的花蕊，故每月都有不同的花盛放，園內又以櫻花聞名，大片的櫻花樹在3、4月綻放，可以起到眺暱理論中的效果。5、6月又有杜鵑和紫陽花等花蕊相繼盛開，對於市民而言這裡是個出外踏青、放鬆心情的好去處。<br><br><img src="https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/5bk4qb56b9nra9mmvomrbc557g/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpLuIsS03FZuUiG8vNzmqw5Sc1EAm-sZefkJSm3qMhwPgfrOUaAfa1rrXwAQ-8-FgovLK6ZfkmDoolNhH8k_LQwxQ4sQ_3VLLpp7z5m_yNk6w1XsketQZr6jaqCYCteVe7EpAArt5ZPq718gGZpst0n0au44qPTzMtIKdNrcj6OJMXlWb9dvtBIJqDRhKv-ZicKQ5dxw_7ZymO3xSTWqZbOlEeKH9wSTkOQF0PdvDD4nRM?session=0&fife" height="200" width="auto" /><br><br><img src="https://doc-0g-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/684g2sua54rfrnlvdcd3vcnk5s/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqidRGY1uIwhKNEthf2DuFj7WPaTYntencLzqwkesheEWe8TIb5ERU0VWC_1iBzgwXsKYpdEG4PzriPzqqw13tzPBR0f8HdnixloR86RUdJohqRKZGX7Ic3duw0a6X2eae5XLbZnXxUfewNbiBGPzT92Tt6WwuUKEwaVcMaVCTQVQBM52_R2ljsCK_ClAYgt5Sazz0s-OuytUBbzQrCUgk9LmiuNRK7EOYfhgSLjguNv3c?session=0&fife" height="200" width="auto" />]]></description>
+      <styleUrl>#icon-1899-0F9D58</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://doc-0k-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/6nn5r1b2tqpq8vtjng6jc2i1ak/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGp5SriIv8fXFay3-FQWstaOJUbGH5tcvJsXQMdGGByPgO4sGFDAH9oUtzmxovKhx3uQrN1UWp2ffainttbNbrsnF8fLMaxhH5DqImpD2JqOKyGxP0OVepULtXYdEXui0YvhLgbDo6wLDS28CX3wZ_1zPV8iuibjY1nT6XgTrDwgGG4y531mY6VVCMHfPiyO0ieHQFXRkmltHmH0qvPy23IFf8IrUhzltOaJGm9eKwz_lcg?session=0&fife https://doc-04-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/5bk4qb56b9nra9mmvomrbc557g/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGpLuIsS03FZuUiG8vNzmqw5Sc1EAm-sZefkJSm3qMhwPgfrOUaAfa1rrXwAQ-8-FgovLK6ZfkmDoolNhH8k_LQwxQ4sQ_3VLLpp7z5m_yNk6w1XsketQZr6jaqCYCteVe7EpAArt5ZPq718gGZpst0n0au44qPTzMtIKdNrcj6OJMXlWb9dvtBIJqDRhKv-ZicKQ5dxw_7ZymO3xSTWqZbOlEeKH9wSTkOQF0PdvDD4nRM?session=0&fife https://doc-0g-3o-mymaps.googleusercontent.com/untrusted/hostedimage/ecbl4d4clsv29fn6koo9hul2lk/684g2sua54rfrnlvdcd3vcnk5s/1700105179500/jf1cfBu5tKL4xA8WO3_dXweQokriwG5c/06177570145521613549/5AJ9UNGqidRGY1uIwhKNEthf2DuFj7WPaTYntencLzqwkesheEWe8TIb5ERU0VWC_1iBzgwXsKYpdEG4PzriPzqqw13tzPBR0f8HdnixloR86RUdJohqRKZGX7Ic3duw0a6X2eae5XLbZnXxUfewNbiBGPzT92Tt6WwuUKEwaVcMaVCTQVQBM52_R2ljsCK_ClAYgt5Sazz0s-OuytUBbzQrCUgk9LmiuNRK7EOYfhgSLjguNv3c?session=0&fife]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          135.7627354,35.0487369,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

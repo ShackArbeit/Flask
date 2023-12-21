@@ -1,5 +1,8 @@
 # 引入 OS 模組
 import os
+# 引入 zipfile 以及 io 模組
+import zipfile
+from io import BytesIO
 # 從 Flask 中引入會使用到的物件
 from flask import Flask, flash, request, redirect, render_template, jsonify,send_file
 # 從 Werkzeug 中引入會使用到的物件
@@ -8,8 +11,8 @@ from werkzeug.utils import secure_filename
 from shp import Shp_To_GeoJson;
 # 從 shp.py 檔案中引入  Read_GeoJson 函式，用於返回轉檔後的檔案的
 from shp import Read_GeoJson;
-import zipfile
-from io import BytesIO
+
+from kml import  KML_To_GEO;
 
 
 
@@ -137,9 +140,11 @@ def upload_KLM():
         flash('已經成功上傳檔案了 !', 'conversion')
         return redirect('/kml')
 
-@app.route('/kml/covert')
+@app.route('/kml/covert',methods=['POST'])
 def CoverKML():
-    
+    KML_To_GEO()
+    flash('.kml 檔案已經成功轉為 GEJSON 檔了 !，請查看')
+    return redirect('/kml')
 
 
 
