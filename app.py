@@ -88,33 +88,30 @@ def DownLoad():
     current_path = os.getcwd()
     # 所有 GeoJSON 檔案所在的資料夾路徑
     geojson_folder_path = current_path
+    # 建立一個空的 Array 存放所有的 Geojson 檔案
     download_files_array = []
+    # 建立存放 Zip 資料夾的緩衝區
     zip_buffer = BytesIO()
 
-    # 將所有的 .geojson 檔案透過 Iterate 方法遍歷一次
+    # 使用 zipfile.ZipFile 物件壓縮所有的 Geojson 檔案到 Zip 資料夾
     with zipfile.ZipFile(zip_buffer, 'a', zipfile.ZIP_DEFLATED) as zip_file:
+    # 將所有的 .geojson 檔案透過 Iterate 方法遍歷一次
         for filename in os.listdir(geojson_folder_path):
             if filename.endswith('.geojson'):
-                # 在遍歷的時候要定義每一個 geojson 檔案的當前路徑
+        # 在遍歷的時候要定義每一個 geojson 檔案的當前路徑
                 file_path = os.path.join(geojson_folder_path, filename)
+        # 將每一個 Geojson 的路徑放進之前定義的 Array 內
                 download_files_array.append(file_path)
                 print("已下載的 GeoJSON 檔案如下 : ")
                 print(file_path)
                 print(filename)
-
+        # 將各別的路徑寫入 Zip 資料夾內
         for file in download_files_array:
             zip_file.write(file, os.path.basename(file))
-
+    # 確保所有的檔案都在 Zip 資料夾內
     zip_buffer.seek(0)
-
-    # 返回 zip 文件到前端
+    # 返回 Zip 資料夾到前端
     return send_file(zip_buffer, download_name='files.zip', as_attachment=True)
-
-
-
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
 
 
 
