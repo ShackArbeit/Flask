@@ -2,7 +2,9 @@
 import geopandas as gpd
 # 引入 OS 模組
 import os
+# 引入 Json 物件
 import json
+from flask import send_file
 
 os.environ['SHAPE_RESTORE_SHX'] = 'YES'
 # 取得當前檔案下的路徑
@@ -57,3 +59,26 @@ def Read_GeoJson():
         print(f"File: {filename}")
         print(json_content)
     return geojson_contents_dict
+
+
+
+def Download_GeoJosn():
+    # 取得當前檔案下的路徑
+    current_path = os.getcwd()
+    # 所有 GeoJSON 檔案所在的資料夾路徑
+    geojson_folder_path = current_path
+
+    # 定義空的字典，用於儲存所有副檔名有 .geojson 的檔案的內容
+    geojson_contents_dict = {}
+
+    # 將所有的 .geojson 檔案透過 Iterate 方法遍歷一次
+    for filename in os.listdir(geojson_folder_path):
+        if filename.endswith('.geojson'):
+            # 在遍歷的時候要定義每一個 geojson 檔案的當前路徑
+            file_path = os.path.join(geojson_folder_path, filename)
+            print("已下載的 GeoJSON 檔案如下 : ")
+            print(file_path)
+            print(filename)
+            return send_file(file_path, as_attachment=True)
+
+    
