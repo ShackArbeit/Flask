@@ -54,6 +54,7 @@ def KML_To_GEO():
             print(f"轉換 KML 到 GeoJSON 時發生錯誤: {kml_File}")
             print(f"錯誤訊息: {e}")
 
+#  以下為將已經轉為 .geojson 檔案顯示在前端頁面的設定
 def Read_KML_JSON():
     # 所有 GeoJSON 檔案所在的資料夾路徑
     geojson_folder_path = subfolder_path2

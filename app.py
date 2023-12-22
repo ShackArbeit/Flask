@@ -11,9 +11,9 @@ from werkzeug.utils import secure_filename
 from shp import Shp_To_GeoJson;
 # 從 shp.py 檔案中引入  Read_GeoJson 函式，用於返回轉檔後的檔案的
 from shp import Read_GeoJson;
-
+#  從 kml 檔案中引入 KML_To_GEO 函式，用於將 kml 檔案轉為 geojson 檔案
 from kml import  KML_To_GEO;
-
+#  從 kml 檔案中引入 KML_To_GEO 函式，用於將已轉為 geojson 檔案顯示在前端頁面
 from kml import Read_KML_JSON;
 
 

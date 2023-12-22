@@ -13,6 +13,7 @@ subfolder_name = "ReceiveUpload"
 # 取得接收從前端上傳檔案的資料夾的路徑
 subfolder_path = os.path.join(current_path, subfolder_name)
 
+# 這是將 .shp 檔案轉回 .geojson 檔案的設定
 def Shp_To_GeoJson():
     # 定義空的陣列，用於儲存上傳副檔名有 .shp 的檔案
     shp_files_Array = []
@@ -32,7 +33,7 @@ def Shp_To_GeoJson():
         gdf.to_file(output_geojson, driver='GeoJSON')
         print(shp_File)
 
-
+#  這是將已經轉為 .geojson 檔案顯示在前端頁面的設定
 def Read_GeoJson():
     # 取得當前檔案下的路徑
     current_path = os.getcwd()
